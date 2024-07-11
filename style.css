@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: rgba(247, 240, 221, 0.88);
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 25px;
+}
+
+.logo{
+    text-decoration: none;
+    color :rgb(222, 184, 135);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.Motion a{
+    text-decoration: none;
+    color: burlywood;
+    font-weight: 500;
+    font-size: 1.5em;
+    padding-left: 25px;
+}
+
+.Motion a:hover{
+    color:rgb(252, 151, 0);
+}
+
+section{
+    padding: 100px 100px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(img/background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2{
+    color: rgb(0, 0, 0);
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 15;
+}
+
+.main h2 span{
+    display: inline-block;
+    color: rgb(252, 151, 0);
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3{
+    color: rgb(0, 0, 0);
+    font-size: 1.4em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.probtn{
+    color: #000;
+    background-color: rgb(252, 151, 0);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding:0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: 0.7s ease;
+} 
+
+.probtn:hover{
+    background-color: rgb(255, 194, 102);
+    transform:scale(1.1);
+}
+
+
+.title{
+   display: flex;
+   justify-content: center;
+   font-size: 2.2em;
+   font-weight: 800;
+   color:rgb(252, 151, 0);
+}
+
+.content{
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+     flex-wrap:wrap;
+}
+
+.card{
+    background-color: #fff;
+    width: 18em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 20%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-self: center; 
+}
+
+.info{
+    text-align: center;
+}
+
+.info h3{
+    color:brown;
+    font-size: 1.2em;
+    font-size: 700;
+    margin: 10px;
+}
+
+.projects{
+    display:inline-block;
+    background-color: rgb(255, 217, 160);
+}
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.project{
+    background-color: #fff;
+    border: 1px solid #000;
+    min-height: 10em;
+    width:18em;
+    overflow: hidden;
+    border-radius:15px;
+    margin:20px;
+    transition : 0.7s ease;
+}
+
+.project:hover{
+    transform: scale(1.1);
+}
+
+.image:hover img{
+    opacity: 0.9;
+}
+
+
+.image img{
+    width:100%
+}
+
+.pro-info{
+    padding:1em;
+}
+
+.pro-title{
+    font-size: 0.8em;
+    color:#000;
+}
+
+.name{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.download{
+    text-decoration: none;
+    color :rgb(222, 184, 135);
+}
+
+.download:hover{
+    color:rgb(252, 151, 0);
+}
+
+.card-contact .info h3{
+    color:#000;
+}
+
+.card-contact .info p{
+    font-size: 1.2em;
+}
+
+.foot{
+    display: flex;
+    background-color: rgb(252, 151, 0);
+    justify-content: space-between;
+}
+
+.foot p{
+    font-size: 1em;
+}
+
+.foot p span{
+    font-size: 1.2em;
+}
+@media screen and (max-width: 688px) {
+        header {
+            padding: 5px;
+        }
+        header .logo{
+            font-size: 1.4em;
+        }
+        header .Motion{
+            padding:1px;
+        }
+        header .Motion a{
+            font-size: 1.2em;
+        }
+        .main{
+            width:100vh;
+        }
+        .main h2 span{
+            font-size: 1.5em;
+        }
+        .main h3{
+            font-size: 1em;
+        }
+        .cards{
+            width:100vh;
+        }
+        .projects{
+            width:100vh;
+        }
+        .card-contact{
+            width:100vh;
+        }
+        .foot{
+            width:100vh;
+        }
+}
+  
